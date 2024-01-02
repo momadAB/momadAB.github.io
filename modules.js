@@ -151,7 +151,9 @@ const GameboardController = (function() {
         index += 1;
         const cellDiv = document.getElementById(`cell${index}`);
         cellDiv.innerHTML = '';
-        const text = document.createElement('p');
+        const text = document.createElement('button');
+        text.classList.add('cell');
+
         // text.innerText = `${cellState}`;
         text.innerText = cellState == null ? '-' : cellState;
 

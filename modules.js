@@ -155,7 +155,7 @@ const GameboardController = (function() {
         text.classList.add('cell');
 
         // text.innerText = `${cellState}`;
-        text.innerText = cellState == null ? '-' : cellState;
+        text.innerText = cellState == null ? '' : cellState;
 
         text.onclick = () => {
             if (!GameboardController.handleEnd()) {

@@ -4,7 +4,7 @@ html {
 
 #header, #gameContainer {
     width: 90dvw;
-    max-width: 500px;
+    max-width: 800px;
 }
 
 #header, .cell, #xSymbol, #oSymbol {
@@ -37,41 +37,18 @@ html {
 
 #tictactoe {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0px;
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    width: 80vw; 
-    max-width: 300px; 
+    width: 0vw;
     padding-top: 5vw;
 }
 
-/* #xSymbolContainer, #oSymbolContainer {
-    position: absolute;
-    top: 28%;
-    font-weight: bold;
-    font-size: 10dvh;
-}
-
-#xSymbolContainer {
-    left: -20%;
-}
-
-#oSymbolContainer {
-    right: -20%;
-}
-
-#xSymbol, #oSymbol {
-    color: #2c3e50;
-    transition-duration: 0.5s;
-} */
-
 #lines {
     position: absolute;
-    /* top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px; */
     z-index: -1; /* Ensures it stays behind the other content */
     background-color: white;
 }
@@ -108,12 +85,13 @@ html {
 #resetButton {
     position: relative;
     margin: auto;
-    width: 150px;
-    height: 50px;
+    width: 10dvw;
+    height: 3dvw;
     background-color:  #58b19f;
     border: 1dvh;
     transition-duration: 1s;
     font-family: 'Lucida Bright';
+    font-size: 2dvh;
     border-radius: 5px;
 }
 
@@ -129,7 +107,6 @@ button:active {
 #status {
     position: absolute;
     top: 2%;
-    /* left: 30%; */
     font-weight: bold;
     font-size: 5dvh;
     color: aliceblue;

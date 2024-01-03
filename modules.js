@@ -176,7 +176,7 @@ const GameboardController = (function() {
   })();
 
 
-Gameboard.placeSymbol(1);
+// Gameboard.placeSymbol(1);
 GameboardController.showState();
 
 document.getElementById('resetButton').onclick = () => {

@@ -3,7 +3,8 @@ html {
 }
 
 #header, #gameContainer {
-    width: 100dvh;
+    width: 90dvw;
+    max-width: 500px;
 }
 
 #header, .cell, #xSymbol, #oSymbol {
@@ -39,9 +40,10 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 50dvh;
     margin: auto;
-    padding-top: 8dvh;
+    width: 80vw; 
+    max-width: 300px; 
+    padding-top: 5vw;
 }
 
 /* #xSymbolContainer, #oSymbolContainer {
@@ -84,6 +86,8 @@ html {
     background-color: #58b19f;
     height: 10dvh;
     width: 10dvh;
+    max-height: 100px;
+    max-width: 100px;
     border-radius: 0px;
     transition-duration: 0.4s;
     border: 10px;

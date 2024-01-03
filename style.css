@@ -6,7 +6,7 @@ html {
     width: 100dvh;
 }
 
-#header, .cell {
+#header, .cell, #xSymbol, #oSymbol {
     font-family: 'Copperplate Gothic';
 }
 
@@ -14,10 +14,12 @@ html {
     background-color: aliceblue;
     margin: auto;
     margin-top: 5dvh;
-    margin-bottom: -2dvh;
+    margin-bottom: -1.5dvh;
     height: 5dvh;
     border-radius: 5px;
     text-align: center;
+    transition-duration: 1s;
+    font-size: 3dvh;
 }
 
 #headerText {
@@ -37,17 +39,37 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 50dvh;
     margin: auto;
-    padding-top: 5dvh;
+    padding-top: 8dvh;
 }
+
+/* #xSymbolContainer, #oSymbolContainer {
+    position: absolute;
+    top: 28%;
+    font-weight: bold;
+    font-size: 10dvh;
+}
+
+#xSymbolContainer {
+    left: -20%;
+}
+
+#oSymbolContainer {
+    right: -20%;
+}
+
+#xSymbol, #oSymbol {
+    color: #2c3e50;
+    transition-duration: 0.5s;
+} */
 
 #lines {
     position: absolute;
-    top: 5px;
-    left: 14px;
-    right: 14px;
-    bottom: 5px;
+    /* top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; */
     z-index: -1; /* Ensures it stays behind the other content */
     background-color: white;
 }
@@ -60,8 +82,8 @@ html {
 
 .cell {
     background-color: #58b19f;
-    height: 75px;
-    width: 75px;
+    height: 10dvh;
+    width: 10dvh;
     border-radius: 0px;
     transition-duration: 0.4s;
     border: 10px;
@@ -80,6 +102,7 @@ html {
 }
 
 #resetButton {
+    position: relative;
     margin: auto;
     width: 150px;
     height: 50px;
@@ -94,8 +117,18 @@ html {
     background-color:  #76D9C5;
 }
 
+button:active {
+    top: 2px; 
+    transition-duration: 0s;
+}
+
 #status {
-    color: white;
+    position: absolute;
+    top: 2%;
+    /* left: 30%; */
+    font-weight: bold;
+    font-size: 5dvh;
+    color: aliceblue;
 }
 
 #cell1 > * {

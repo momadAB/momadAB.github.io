@@ -1,0 +1,234 @@
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.inputDetails {
+  height: 40%;
+  width: 50%;
+}
+
+.textData {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.footerText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgray;
+  size: 12px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-color: darkgrey;
+}
+
+.endText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgray;
+  size: 16px;
+  text-align: left;
+}
+
+td {
+  padding: 2%;
+}
+
+.item {
+  width: 70%;
+  padding: 2%;
+  background-color: rgba(59, 59, 59);
+  border: 3px black;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-items: space-between;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: gray;
+}
+
+.detailsText {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-top: 2%;
+  color: white;
+  /* margin-bottom: 2%; */
+}
+
+.detailsP {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+ul li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.language-dropdown {
+  display: flex;
+}
+
+.item {
+  margin: 5px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+#trending-section {
+  padding: 0 148px;
+}
+
+#trending-text {
+  /* Copy pasted properties from netflix site */
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0 0;
+}
+
+#dropdown-section {
+  display: flex;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-wrap: nowrap;
+
+  box-sizing: border-box;
+  background: rgba(15, 15, 15);
+  border-radius: 0.25rem;
+  border-width: 0.0625rem;
+  padding-right: calc(0.75rem + 0rem);
+
+  width: 100px;
+  height: 40px;
+  border: solid rgba(94, 94, 94) 1px;
+
+  margin: 16px 24px 0 0;
+}
+
+.dropdown-menu > p {
+  padding: 8px 0px 8px 12px;
+  margin: 0 0 0 0;
+}
+
+.dropdown-menu > .bi-caret-down-fill {
+  margin: auto;
+  padding-left: 10px;
+}
+
+.movie-cards-section {
+  display: flex;
+  overflow: hidden;
+  margin: 16px 0 0 0;
+  height: 268px;
+  width: 1204px;
+}
+
+.movie-cards-section > * {
+  margin: 0 22px;
+  height: 252px;
+  width: 180px;
+  background-size: contain;
+  flex: none;
+  /* position: relative; */
+}
+
+.trending-number {
+  line-height: 1;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  font-weight: 700;
+  color: black;
+  -webkit-text-stroke: 0.12rem rgb(255, 255, 255);
+  /* text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5); */
+  font-size: 6.25rem;
+}
+
+.trending-number > p {
+  position: absolute;
+  left: -24px;
+  top: 36px;
+}
+
+.movie-cards-section > .movie-card-1 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABc3MZisCeN-sK8QsBZ8J2NKcUqBB4jChRaOjCK6y-NJa9ThcfZH6vlKuOBy7IPJkR6mpfvn49NIJ4qDgfSWkNv2WX2D9eKYpetcspK1ej286ys0AJhZIElnoDyEg55WPpRx2l5SUnET-PMpzoBSeaRTcSwWLh3GOAzk3NJ_9FQHsrL5Q3qP6FfPF5HWiO2qsKNZ3c6jHFW2obIlftM20KzNL4pgOPePk5sx35M_U91K4b3l2OVh9l7RseNUNLut0y2cI0x3dSQf6FTTvC7zxVCNzrcniB5d7zTZCYE_rsA2NSXTWlXHOdBHTYKMZu60YIE5etaLtxStq32bzKuYBhxTwsDi7iZzOHIXD5EIbdFCCiBcJjyo.jpg?r=0bd);
+}
+
+.movie-cards-section > .movie-card-2 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABc9w92AsKsf281IxnMHqckMTgfpbAN2oLLIXe5fMmd1rm-OUcuPZQzQcMSShNxejWspL15q6uzjws3OeQPKnMjUMx7lwaqDdT0UXd2_AKugoVn21UmefJUJZqpU5q2gDUHe_XxAidv4yY1rYdkPvTuMIX61NWNTLYb9VJ5EM7ZCBwxwVi9GdYHo8cJmOdWlldhuis0r7rVwCpVIoypQRdgPz0Kh3jTlfgjZI3sV9cSMoWfhDAiWB9IctNzo2Xbc6B-EPNhyYinxZC85WhE0qLtbOpLlH.jpg?r=ff5);
+}
+
+.movie-cards-section > .movie-card-3 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSVyoH6onbiCqnBTAiFQbAlq4sPvAOgBVu5GESSh2e4cf74kKmBXqxlvQPLYiWDLHB4v_uh8OguoEcmpzFC4Edf2kJEhcJ6fcpzeQQSDKEvPjIqPzKWdE9ndOVeyRo_hrd2ceyAf7v36O6vhtL3BAQNDOHJg_r1KkXf9-a9VrcsJfoVeEShM9VvysALC_j-m-K6WkZQR_EhrXYvWtFfhuu8aZuqC-Ga4Go0J0sz-keBYDslV62M1RsXBDy9sfhkY_w4XtFn981WefJG8BI8QF4_N448R.jpg?r=382);
+}
+
+.movie-cards-section > .movie-card-4 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcBjg_otllprkw8jzzJhZdn3SGjhdyOwIDWUMA2oiYMoXmZPhOg5Q64f-9w8UBrAPtjQI1ETwdMHV_Nuru_EadpX5FFTMCv1yYFMfsQCmgyDK61CAOka3EolX-1hIh4mrAHQ5HQ6MhufcY_SLaNbFJ2_9Xqb-7n0kRpE3lrnBRDDX6uGHRFSdJrAkWnWqwlZ1M4eB__8GMwva1kEnKQBWy9Gu0aj2iOG_ycHWtgnNChUjckGmeS_AF3NYgsV1AHje0nxWdtb-R_pOKfF0YZxOcx7PgPS.jpg?r=d02);
+}
+
+.movie-cards-section > .movie-card-5 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQgM42Z5LM-BYxK3ADUOKJqvNM9D60dz29vzcW4PBgi7HFLP76vNH4eq6WnNTiqPe-VygLzswGD9FF0-KhlgF1QWWs7EIMmhraRC7pzLygbCzg0hl_p-ej1k6jbH7CsvZg4mG8M3V5P7G6jyB_q3Y0A7CBrKSa7QbxTkSdv5D7gasT6qHAPKLzlJ8u4wu-TaFhVfeykKkixN-Rx5CtJLr0amwkcYHtU63eN1jPAl-URf4yjm_KutKSmISh0mmpkISXt5mfZGdkeU-ugFgksakE44r6oNDc2qIRtPV41oIFmMD4XPRQLcnM2OmBPbk0w0hRVwnYOs8whCk9fPz___GJc.jpg?r=f22);
+}
+
+.movie-cards-section > .movie-card-6 {
+  background-image: url(https://occ-0-3495-55.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbFn9Ad1QrMnFy2OPDVcastLf1Uzm8Ia8Pw4-PkJigC2-6tjbfzGg75j0tNjrreiKdOhvY55takp7DuLnXgrveqbSvhJZefw5La1U0dlqN00wSD37DAu7GWo-Kk1WkE0ZZ1uz-yU0xkjCVjnI5U4C-jmBDi-2SSMwoc6l9SJsQgjxlgq66HsIzfoJwKD9BghHdS_EoSLGXyBw8BaC4oiQz9EcgJjovHb0ijNlJvFf1GLG570kJ1JTfYGKT6NRr9Gz_VUp1MIWm-hmUYpvDfvcMTRAYd4SBt0-f1RfH9GLP0NUz0LasvR4eZPr_XkvO4ZpvLJCLTzpbKhycE0GNPi4EyvGABdt4XcJu9gturGL_GZh0De19c.jpg?r=57a);
+}
+
+.movie-cards-section-wrapper {
+  display: flex;
+}
+
+.right-button {
+  cursor: pointer;
+  height: 7.5rem;
+  width: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(26, 26, 26);
+  color: rgb(255, 255, 255);
+  margin: 82px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.right-button:hover {
+  background-color: rgba(51, 51, 51);
+}

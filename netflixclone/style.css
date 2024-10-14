@@ -262,6 +262,10 @@ body {
   padding: 0px 20px;
 }
 
+.reasons-cards-wrapper > * > p {
+  color: #bbbac2;
+}
+
 /* Vector symbols in reasons cards */
 .default-ltr-cache-1nu0xuw {
   position: absolute;

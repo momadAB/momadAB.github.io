@@ -232,3 +232,40 @@ body {
 .right-button:hover {
   background-color: rgba(51, 51, 51);
 }
+
+.reasons-cards-wrapper {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  position: relative;
+
+  /* margin: 0 10rem; */
+}
+
+.reasons-title {
+  position: absolute;
+  top: -4rem;
+  left: 0%;
+}
+
+.reasons-cards-wrapper > * {
+  position: relative;
+  margin: 50px 8px;
+  height: 278px;
+  width: 298px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 1rem;
+  padding: 0.1rem;
+}
+
+.reasons-cards-wrapper > * > * {
+  padding: 0px 20px;
+}
+
+/* Vector symbols in reasons cards */
+.default-ltr-cache-1nu0xuw {
+  position: absolute;
+  bottom: 4%;
+  right: -1%;
+  z-index: 1;
+}
